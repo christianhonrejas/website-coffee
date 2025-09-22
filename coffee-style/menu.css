@@ -1,0 +1,154 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", Arial, sans-serif;
+  background: url("background-image/coffee-menu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  padding: 15px 40px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+.navigator {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+nav a.active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.signup {
+  background-color: burlywood;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.shop-name {
+  margin: 0;        
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.left-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  background: rgba(182, 105, 70, 0.9);
+  border-radius: 12px;
+  width: 300px;
+  max-width: 250px;
+  height: 360px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.menu:hover {
+  transform: translateY(-5px);
+}
+
+.menu img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  margin: 0 0 5px 0;
+  flex-grow: 1;
+}
+
+.rate {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(255, 255, 0);
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
+
+.price-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item, .btk-buy {
+  background-color: rgb(165, 42, 42);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 8px 11px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: white;
+  color: black;
+}
+
+.btk-buy:hover {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,202 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lato", Arial, sans-serif;
+    height: 100vh;
+    background-image: url("background-image/coffee-contact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+nav {
+  padding: 15px 40px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.shop-name {
+  margin: 0;            
+  font-size: 1.2rem;  
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+
+.navigator {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+}
+
+.signup {
+  background-color: burlywood;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-contact {
+  text-align: center;
+  background-color: rgba(19, 19, 19, 0.5);
+  margin-bottom: 14%;
+  padding: 50px;
+}
+
+input {
+  display: block;
+  width: 315px;
+  height: 45px;
+  margin: 15px;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+  border: 0px solid;
+  border-radius: 15px;
+}
+
+.btk-submit {
+  background-color: burlywood;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+.container-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(19, 19, 19, 0.5);
+  padding: 0px;
+  margin-bottom: 10%;
+}
+
+h1 {
+  color: white;
+}
+
+.address-images {
+  text-align: center;
+}
+
+.location-info {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.location1 {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+}
+.location2 {
+  width: 250px;
+  height: 196px;
+  border-radius: 10px
+}
+.location3 {
+  width: 250px;
+  height: 195px;
+  border-radius: 10px
+}
+.location4 {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px
+}
+
+.location1:hover {
+  width: 300px;
+  height: 250px;
+}
+.location2:hover {
+  width: 300px;
+  height: 250px;
+}
+.location3:hover {
+  width: 300px;
+  height: 250px;
+}
+.location4:hover {
+  width: 300px;
+  height: 250px;
+}
+
+.time, .address-info {
+  color: white;
+  margin-top: 5px;
+  font-size: 14px;;
+}
+
+.Opening, .address {
+  font-size: 18px;
+  font-weight: bold;
+  color: burlywood;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.coffee-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(222, 184, 135, 0.267);
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-item a, 
+.contact-item p {
+  margin: 0;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.contact-item .description {
+  flex-basis: 100%; 
+  margin-top: 10px;
+  font-weight: normal;
+  color: white;
+}

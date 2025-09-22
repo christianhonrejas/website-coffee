@@ -1,0 +1,52 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lato", Arial, sans-serif;
+    height: 100vh;
+    background-image: url("background-image/coffee-about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+nav {
+  padding: 15px 40px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.shop-name {
+  margin: 0;            
+  font-size: 1.2rem;  
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+
+.navigator {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.signup {
+  background-color: burlywood;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
