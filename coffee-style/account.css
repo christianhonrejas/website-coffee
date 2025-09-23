@@ -37,7 +37,7 @@ nav a {
 }
 
 .container {
-  margin: 100px 0 0 60px;
+  margin: 100px 0 0 100px;
 }
 
 h1 {
@@ -62,7 +62,44 @@ p {
   margin-bottom: 20px;
 }
 
+ul {
+  margin-bottom: 30px;
+}
+
 li {
   margin-bottom: 10px;
   font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.account {
+  background-color: rgb(204, 104, 47);
+  padding: 12px;
+  margin: 18px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlideLeft 1.5s ease-out forwards;
+}
+
+@keyframes fadeSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
