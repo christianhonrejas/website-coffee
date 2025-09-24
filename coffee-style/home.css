@@ -1,5 +1,5 @@
 html, body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   background-image: url("background-image/coffee-home.webp");
@@ -41,11 +41,11 @@ nav a.active {
 }
 
 .container {
-  margin: 200px 0 0 60px;
+  margin: 110px 0 60px 60px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 20px;
 }
 
@@ -58,24 +58,65 @@ h1 {
 .introduction {
   font-size: 20px;
   margin: 5px 0;
-  margin-bottom: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-.order {
-  background-color: rgb(255, 253, 253);
-  text-decoration: none;
-  color: black;
-  padding: 10px;
+.about-btn {
+  background-color: white;
+  padding: 15px;
   border: 0px solid;
-  border-radius: 10px;
+  color: black;
+  font-size: 18px;
   font-weight: bold;
 }
 
-h1, span, .introduction {
+.container-rate {
+  display: inline-block;
+  margin: 20px;
+}
+
+.rate {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  color: burlywood;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(223, 196, 160);
+  color: rgb(0, 0, 0);
+}
+
+.order {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.delivery {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(46, 45, 45);
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container {
   opacity: 0;
   transform: translateY(50px);
   animation: fadeSlide 1.5s ease-out forwards;
