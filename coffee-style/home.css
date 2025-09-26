@@ -75,7 +75,8 @@ a {
 
 .container-rate {
   display: inline-block;
-  margin: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .rate {
@@ -129,116 +130,40 @@ img {
   }
 }
 
-/* ========== Mobile (≤480px) ========== */
 @media (max-width: 480px) {
   nav {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 10px;
   }
-  nav a {
-    display: block;
-    padding: 5px 0;
-  }
-  .shop-name {
-    font-size: 1.2rem;
-  }
-  h1 {
-    font-size: 28px;
-    text-align: center;
-  }
-  .introduction {
-    font-size: 16px;
-    text-align: center;
-    padding: 0 10px;
-  }
-  .about-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  .stats {
+
+  .navigator {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
+
+  h1,
+  .introduction,
+  .about-btn,
+  .rate,
   .footer {
-    font-size: 10px;
     text-align: center;
+    width: 100%;
+  }
+
+  .about-btn {
+    margin: 10px auto;
+  }
+
+  .container-rate {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 }
 
-/* ========== Tablet (481px–1024px) ========== */
-@media (min-width: 481px) and (max-width: 1024px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 30px;
-  }
-  .shop-name {
-    font-size: 1.5rem;
-  }
-  h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-  .introduction {
-    font-size: 18px;
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .about-btn {
-    display: block;
-    margin: 25px auto;
-    padding: 12px 24px;
-    font-size: 18px;
-  }
-  .stats {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .footer {
-    font-size: 12px;
-    text-align: center;
-  }
-}
-
-/* ========== Desktop (≥1025px) ========== */
-@media (min-width: 1025px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 60px;
-  }
-  .shop-name {
-    font-size: 2rem;
-  }
-  h1 {
-    font-size: 48px;
-    text-align: center;
-  }
-  .introduction {
-    font-size: 20px;
-    max-width: 60%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .about-btn {
-    display: block;
-    margin: 30px auto;
-    padding: 14px 28px;
-    font-size: 20px;
-  }
-  .stats {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .footer {
-    font-size: 14px;
-    text-align: center;
-  }
-}
 
 
 
