@@ -76,6 +76,7 @@ a {
 .container-rate {
   display: inline-block;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .rate {
@@ -169,37 +170,34 @@ img {
 @media (max-width: 480px) {
   nav {
     padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigator {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
   .shop-name {
     font-size: 1rem;
-  }
-  h1 {
-    font-size: 30px;
     text-align: center;
+    width: 100%;
   }
-  .introduction {
-    font-size: 16px;
+  h1,
+  .introduction,
+  .about-btn,
+  .rate {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
   .about-btn {
-    padding: 10px;
-    font-size: 16px;
-    text-align: center;
-  }
-  .rate {
-    font-size: 10px;
-    text-align: center;
-  }
-  .order {
-    font-size: 13px;
-  }
-  .delivery {
-    font-size: 12px;
-  }
-  .footer {
-    font-size: 10px;
+    display: block;
+    margin: 10px auto;
   }
 }
+
+
 
 
 
