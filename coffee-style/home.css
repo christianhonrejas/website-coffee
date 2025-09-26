@@ -129,74 +129,113 @@ img {
   }
 }
 
-
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
   nav {
-    padding: 15px 20px;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
   }
-  .navigator {
-    gap: 20px;
-  }
-  .container {
-    margin: 80px 20px;
+  .shop-name {
+    font-size: 1rem;
   }
   h1 {
-    font-size: 50px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .introduction {
+    font-size: 16px;
+    text-align: center;
+  }
+  .about-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .rate {
+    font-size: 10px;
+    text-align: center;
+  }
+  .order {
+    font-size: 13px;
+    text-align: center;
+  }
+  .delivery {
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer {
+    font-size: 10px;
+    text-align: center;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   nav {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+    padding: 15px 30px;
+    justify-content: space-between;
   }
-  .navigator {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .container {
-    margin: 60px 15px;
+  .shop-name {
+    font-size: 1.5rem;
   }
   h1 {
     font-size: 40px;
+    text-align: center;
   }
   .introduction {
     font-size: 18px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .about-btn {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+  .rate, .order, .delivery {
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1025px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    padding: 20px 60px;
+    justify-content: space-between;
+  }
+  .shop-name {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 50px;
     text-align: center;
-    gap: 10px;
   }
-
-  .navigator {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  h1,
-  .introduction,
-  .about-btn,
-  .rate,
-  .footer {
+  .introduction {
+    font-size: 20px;
     text-align: center;
-    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
   }
-
   .about-btn {
-    margin: 10px auto;
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 20px;
   }
-
-  .container-rate {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+  .rate, .order, .delivery {
+    font-size: 16px;
+    text-align: center;
+  }
+  .footer {
+    font-size: 14px;
+    text-align: center;
   }
 }
 
