@@ -75,8 +75,7 @@ a {
 
 .container-rate {
   display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .rate {
@@ -207,6 +206,7 @@ img {
     align-items: center;
   }
 }
+
 
 
 
