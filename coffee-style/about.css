@@ -8,6 +8,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: auto;
+
 }
 
 nav {
@@ -45,8 +46,56 @@ a {
   text-decoration: none;
 }
 
-.signup {
-  background-color: burlywood;
-  padding: 4px 10px;
-  border-radius: 20px;
+.container-1 {
+  max-width: 800px;
+  margin: 20px auto 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
+}
+
+.about-us {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 40px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 80px;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.story-text {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+}
+
+.name {
+  color: rgb(231, 165, 41);
+  font-weight: bold;
+}
+
+.our-mission {
+  max-width: 800px;
+  margin: 20px auto 40px auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
 }
