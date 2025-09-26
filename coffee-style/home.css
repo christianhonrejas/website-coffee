@@ -175,16 +175,20 @@ img {
   }
   h1 {
     font-size: 30px;
+    text-align: center;
   }
   .introduction {
     font-size: 16px;
+    text-align: center;
   }
   .about-btn {
     padding: 10px;
     font-size: 16px;
+    text-align: center;
   }
   .rate {
-    font-size: 20px;
+    font-size: 10px;
+    text-align: center;
   }
   .order {
     font-size: 13px;
@@ -196,6 +200,8 @@ img {
     font-size: 10px;
   }
 }
+
+
 
 
 
