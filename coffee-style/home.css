@@ -169,20 +169,24 @@ img {
 
 @media (max-width: 480px) {
   nav {
-    padding: 10px;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 10px;
   }
+
   .navigator {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
+
   .shop-name {
     font-size: 1rem;
     text-align: center;
     width: 100%;
   }
+
   h1,
   .introduction,
   .about-btn,
@@ -191,9 +195,16 @@ img {
     width: 100%;
     margin: 0 auto;
   }
+
   .about-btn {
     display: block;
     margin: 10px auto;
+  }
+
+  .container-rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
