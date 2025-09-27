@@ -1,6 +1,6 @@
 html, body {
   margin: 0px;
-  padding: 0;
+  padding: 0px;
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   background-image: url("background-image/coffee-home.webp");
   background-size: cover;
@@ -17,8 +17,8 @@ nav {
   align-items: center;
 }
 
-.shop-name {
-  margin: 0;            
+.shop-name {     
+  margin: 0px;      
   font-size: 1.2rem;  
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -75,18 +75,24 @@ a {
 
 .container-rate {
   display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  margin: 0px 0px 70px 60px;
 }
 
 .rate {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
-  text-align: center;
   color: burlywood;
 }
 
-.container-footer {
+.rate-coffee,
+.rate-order,
+.rate-customer {
+  font-size: 17px;
+  color: white;
+  font-weight: 100;
+}
+
+.container-1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,49 +136,116 @@ img {
   }
 }
 
-@media (max-width: 480px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .container {
+    margin: 110px 0 0 0;
+  }
+  
+  .shop-name {
+    font-size: 12px;
   }
 
   .navigator {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    font-size: 11px;
   }
 
-  h1,
-  .introduction,
-  .about-btn,
-  .rate,
-  .footer {
+  nav {
+    padding: 0.9rem 0.1rem;
+    justify-content: space-evenly;
+  }
+
+  h1 {
     text-align: center;
-    width: 100%;
+    font-size: 45px;
+  }
+
+  .introduction {
+    text-align: center;
+    font-size: 1rem;
   }
 
   .about-btn {
-    margin: 10px auto;
+    display: block;
+    margin: 0 auto;
+    width: fit-content; 
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
   }
 
   .container-rate {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    text-align: center;
+    margin: 0 0 30px 0;
   }
+
+  .rate {
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  .rate-coffee,
+  .rate-order,
+  .rate-customer {
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+  }
+
+  .container-1 {
+    margin-top: 70px;
+  }
+
+  .order {
+    font-size: 14px;
+  }
+  .delivery {
+    font-size: 13px;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer {
+    font-size: 11px;
+  }
+  
 }
 
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .shop-name {
+    font-size: 16px;
+  }
 
+  .navigator {
+    font-size: 15px;
+  }
 
+  h1 {
+    font-size: 55px;
+  }
 
+  .introduction {
+    font-size: 18px;
+  }
 
+  .about-btn {
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
 
+  .rate {
+    font-size: 20px;
+    margin: 0px;
+  }
 
-
-
-
-
-
-
+  .footer {
+    font-size: 11px;
+  }
+  
+}
