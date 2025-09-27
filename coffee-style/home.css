@@ -99,6 +99,11 @@ a {
   text-align: center;
   background-color: rgb(223, 196, 160);
   color: rgb(0, 0, 0);
+  padding: 0px;
+}
+
+.container-footer {
+  padding: 0px;
 }
 
 .order {
