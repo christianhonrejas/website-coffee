@@ -15,6 +15,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 
@@ -46,6 +51,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 90px auto auto auto;
 }
 
 
@@ -53,6 +59,7 @@ nav a.active {
   background-color: burlywood;
   padding: 4px 10px;
   border-radius: 20px;
+  margin-right: 90px;
 }
 .container-contact {
   text-align: center;
@@ -69,10 +76,14 @@ input {
   margin-bottom: 20px;
   padding: 0px 10px;
   border: 0px solid;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
-.btk-submit {
+.message {
+  padding-bottom: 70px;
+}
+
+.btn-submit {
   background-color: burlywood;
   padding: 8px 15px;
   cursor: pointer;
@@ -80,23 +91,23 @@ input {
   font-weight: bold;
 }
 
-
-
 .container-location {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(19, 19, 19, 0.5);
   padding: 0px;
   margin-bottom: 10%;
 }
 
 h1 {
-  color: white;
+  color: rgb(224, 167, 44);
+  font-size: 40px;
 }
 
 .address-images {
   text-align: center;
+  background-color: rgba(19, 19, 19, 0.5);
+  padding: 0 20px;
 }
 
 .location-info {
@@ -105,93 +116,94 @@ h1 {
   text-align: center;
 }
 
-.location1 {
+.location-image-1 {
   width: 250px;
   height: 200px;
   border-radius: 10px;
 }
-.location2 {
+.location-image-2 {
   width: 250px;
   height: 196px;
   border-radius: 10px
 }
-.location3 {
+.location-image-3 {
   width: 250px;
   height: 195px;
   border-radius: 10px
 }
-.location4 {
+.location-image-4 {
   width: 250px;
   height: 200px;
   border-radius: 10px
 }
 
-.location1:hover {
-  width: 300px;
-  height: 250px;
-}
-.location2:hover {
-  width: 300px;
-  height: 250px;
-}
-.location3:hover {
-  width: 300px;
-  height: 250px;
-}
-.location4:hover {
-  width: 300px;
-  height: 250px;
+.location-image-1:hover,
+.location-image-2:hover,
+.location-image-3:hover,
+.location-image-4:hover {
+  width: 270px;
+  height: 220px;
 }
 
 .time, .address-info {
   color: white;
   margin-top: 5px;
-  font-size: 14px;;
+  font-size: 14px;
 }
 
-.Opening, .address {
+.Opening, 
+.address {
   font-size: 18px;
   font-weight: bold;
   color: burlywood;
 }
 
-.container-1 {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
 .coffee-contact {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  color: rgb(0, 0, 0);
-  background-color: rgba(222, 184, 135, 0.267);
-  padding: 30px 10px;
-  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.contact {
+  text-align: center;
+  background-color: rgba(19, 19, 19, 0.5);
+  padding: 30px;
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
 }
 
-.contact-item img {
+.phone-number-logo {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.gmail-logo {
   width: 40px;
   height: 40px;
+  margin-bottom: 5px;
+}
+
+.facebook-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.instagram-logo {
+  width: 55px;
+  height: 55px;
 }
 
 .contact-item a, 
 .contact-item p {
   margin: 0;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -202,18 +214,21 @@ h1 {
   color: white;
 }
 
-.container-rate {
-  display: inline-block;
-  margin: 20px;
-}
-
-.container-footer {
+.container-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: rgb(223, 196, 160);
   color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.container-footer {
+  padding: 0px;
+  margin: 0px;
 }
 
 .order {
@@ -227,7 +242,8 @@ h1 {
   color: rgb(46, 45, 45);
 }
 
-img {
+.foodpanda-logo,
+.grabfood-logo {
   width: 30px;
   height: 30px;
   margin: 5px;
@@ -236,4 +252,143 @@ img {
 .footer {
   font-size: 12px;
   font-weight: bold;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    margin: 110px 0 50px 0;
+  }
+  
+  .shop-name {
+    font-size: 0.7rem;
+    margin-left: 0px;
+  }
+
+  .navigator {
+    font-size: 0.7rem;
+    gap: 15px;
+  }
+
+  nav {
+    padding: 0.9rem 0.1rem;
+    justify-content: space-evenly;
+  }
+
+  .signup {
+    margin-right: 0.5rem;
+  }
+
+  .container {
+    margin: 90px auto auto auto;
+  }
+
+  .container-contact {
+    padding: 10px 0px 30px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    width: 270px;
+    height: 40px;
+    margin: 15px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    border: 0px solid;
+    border-radius: 10px;
+  }
+
+  .container-location {
+    flex-direction: column;
+  }
+
+  .location-info {
+    display: block;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .address-images {
+    flex-direction: column;
+  }
+  .location-image-1 {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  }
+
+  .location-image-2 {
+    width: 200px;
+    height: 146px;
+    border-radius: 10px
+  }
+
+  .location-image-3 {
+    width: 200px;
+    height: 145px;
+    border-radius: 10px
+  }
+
+  .location-image-4 {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px
+  }
+
+  .location-image-1:hover,
+  .location-image-2:hover,
+  .location-image-3:hover,
+  .location-image-4:hover {
+    width: 220px;
+    height: 170px;
+  }
+
+  .Opening, 
+  .address {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: burlywood;
+  }
+
+  .time,
+  .address-info, 
+  .description {
+    color: white;
+    margin-top: 0px;
+    font-size: 0.9rem;
+  }
+
+  .contact-item {
+    display: block;
+  }
+
+  .container-1 {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .order {
+    font-size: 0.9rem;
+  }
+  .delivery {
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+  
 }
