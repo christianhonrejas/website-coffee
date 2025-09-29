@@ -30,7 +30,6 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-
 .navigator {
   display: flex;
   gap: 30px;
@@ -38,13 +37,16 @@ nav {
 
 nav a {
   color: white;
-  text-decoration: none;
   font-weight: 500;
   font-weight: bold;
 }
 
 nav a.active {
   border-bottom: 2px solid white;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -61,6 +63,7 @@ nav a.active {
   border-radius: 20px;
   margin-right: 90px;
 }
+
 .container-contact {
   text-align: center;
   background-color: rgba(19, 19, 19, 0.5);
@@ -102,12 +105,13 @@ input {
 h1 {
   color: rgb(224, 167, 44);
   font-size: 40px;
+  text-align: center;
 }
 
 .address-images {
   text-align: center;
   background-color: rgba(19, 19, 19, 0.5);
-  padding: 0 20px;
+  padding: 10px;
 }
 
 .location-info {
@@ -148,12 +152,12 @@ h1 {
 .time, .address-info {
   color: white;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .Opening, 
 .address {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: burlywood;
 }
@@ -312,7 +316,6 @@ h1 {
 
   .location-info {
     display: block;
-    margin: 20px;
     text-align: center;
   }
 
@@ -353,9 +356,7 @@ h1 {
 
   .Opening, 
   .address {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: burlywood;
+    font-size: 1rem;
   }
 
   .time,
@@ -368,6 +369,7 @@ h1 {
 
   .contact-item {
     display: block;
+    flex-direction: column;
   }
 
   .container-1 {
@@ -391,4 +393,111 @@ h1 {
     font-size: 0.7rem;
   }
   
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .shop-name {
+    font-size: 1rem;
+  }
+
+  .navigator {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .location-info {
+    display: block;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .address-images {
+    flex-direction: column;
+  }
+  .location-image-1 {
+    width: 220px;
+    height: 160px;
+    border-radius: 10px;
+  }
+
+  .location-image-2 {
+    width: 220px;
+    height: 160px;
+    border-radius: 10px
+  }
+
+  .location-image-3 {
+    width: 220px;
+    height: 160px;
+    border-radius: 10px
+  }
+
+  .location-image-4 {
+    width: 220px;
+    height: 160px;
+    border-radius: 10px
+  }
+
+  .location-image-1:hover,
+  .location-image-2:hover,
+  .location-image-3:hover,
+  .location-image-4:hover {
+    width: 240px;
+    height: 170px;
+  }
+
+  .Opening, 
+  .address {
+    font-size: 1.1rem;
+  }
+
+  .time,
+  .address-info, 
+  .description {
+    color: white;
+    margin-top: 0px;
+    font-size: 1rem;
+  }
+
+  .address-images {
+    padding: 0px;
+  }
+
+  .contact-item {
+    flex-direction: column;
+  }
+
+  .contact {
+    padding: 1.8rem 0rem;
+  }
+
+  .container-1 {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .order {
+    font-size: 0.9rem;
+  }
+  .delivery {
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+
 }
