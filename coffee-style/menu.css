@@ -171,7 +171,7 @@ a {
   color: black;
 }
 
-.btk-buy:hover {
+.btn-buy:hover {
   background-color: white;
   color: black;
 }
@@ -387,3 +387,4 @@ img {
     font-size: 0.7rem;
   }
 }
+
