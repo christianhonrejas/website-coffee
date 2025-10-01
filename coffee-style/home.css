@@ -168,9 +168,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .container {
-    margin: 110px 0 50px 0;
-  }
   
   .shop-name {
     font-size: 0.7rem;
@@ -191,10 +188,16 @@ img {
     margin-right: 0.5rem;
   }
 
+  .container {
+    margin: 120px 0 60px 0;
+  }
+
   h1 {
     text-align: center;
     font-size: 2.9rem;
+    color: rgb(235, 139, 13);
   }
+
 
   .introduction {
     text-align: center;
@@ -275,6 +278,7 @@ img {
 
   .introduction {
     font-size: 1.2rem;
+    color: rgb(228, 178, 112);
   }
 
   .about-btn {
