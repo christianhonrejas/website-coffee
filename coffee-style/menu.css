@@ -171,7 +171,7 @@ a {
   color: black;
 }
 
-.btn-buy:hover {
+.btk-buy:hover {
   background-color: white;
   color: black;
 }
@@ -246,12 +246,12 @@ img {
   }
   
   .shop-name {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left: 0px;
   }
 
   .navigator {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     gap: 15px;
   }
 
@@ -387,4 +387,3 @@ img {
     font-size: 0.7rem;
   }
 }
-
