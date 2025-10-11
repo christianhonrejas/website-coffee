@@ -125,12 +125,12 @@ a {
   }
   
   .shop-name {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left: 0px;
   }
 
   .navigator {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     gap: 15px;
   }
 
@@ -152,6 +152,12 @@ a {
   }
 
   .introduction {
+    font-size: 1rem;
+  }
+
+  .account {
+    padding: 0.6rem;
+    border-radius: 15px;
     font-size: 1rem;
   }
 
