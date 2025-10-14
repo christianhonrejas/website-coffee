@@ -122,10 +122,43 @@ p {
   .lastname,
   .email,
   .password {
-    width: 80%;
+    width: 85%;
   }
 
   .btn-login {
     padding: 0.8rem 4rem;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container-login {
+    padding: 25px 40px 25px 40px;
+    flex-direction: column;
+  }
+  
+  .firstname,
+  .lastname,
+  .email,
+  .password {
+    width: 88%;
+  }
+
+  .btn-login {
+    padding: 0.8rem 7rem;
   }
 }
